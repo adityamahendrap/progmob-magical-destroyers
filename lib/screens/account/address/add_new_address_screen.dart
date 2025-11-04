@@ -1,7 +1,7 @@
 import 'package:color_log/color_log.dart';
 import 'package:flutter/material.dart';
-import 'package:progmob_magical_destroyers/configs/colors/colors_planet.dart';
-import 'package:progmob_magical_destroyers/widgets/app_bar_with_back_button.dart';
+import 'package:lelang_app/configs/colors/colors_planet.dart';
+import 'package:lelang_app/widgets/app_bar_with_back_button.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:flutter_map_dragmarker/flutter_map_dragmarker.dart';

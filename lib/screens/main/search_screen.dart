@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:progmob_magical_destroyers/configs/colors/colors_planet.dart';
-import 'package:progmob_magical_destroyers/widgets/wrapper/bottom_sheet_fit_content_wrapper.dart';
+import 'package:lelang_app/configs/colors/colors_planet.dart';
+import 'package:lelang_app/widgets/wrapper/bottom_sheet_fit_content_wrapper.dart';
 import 'package:syncfusion_flutter_sliders/sliders.dart';
 
 class Search extends StatelessWidget {

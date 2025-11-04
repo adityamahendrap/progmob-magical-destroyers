@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_carousel_widget/flutter_carousel_widget.dart';
-import 'package:progmob_magical_destroyers/configs/colors/colors_planet.dart';
+import 'package:lelang_app/configs/colors/colors_planet.dart';
 
 class CarouselSliderProduct extends StatelessWidget {
   final List items;

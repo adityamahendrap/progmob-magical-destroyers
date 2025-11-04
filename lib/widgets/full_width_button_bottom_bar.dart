@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:progmob_magical_destroyers/widgets/full_width_button.dart';
+import 'package:lelang_app/widgets/full_width_button.dart';
 
 class FullWidthButtonBottomBar extends StatelessWidget {
   final String text;
   final void Function() onPressed;
 
-  const FullWidthButtonBottomBar({
-    super.key,
-    required this.context,
-    required this.text,
-    required this.onPressed
-  });
+  const FullWidthButtonBottomBar(
+      {super.key,
+      required this.context,
+      required this.text,
+      required this.onPressed});
 
   final BuildContext context;
 

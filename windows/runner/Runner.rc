@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "progmob_magical_destroyers" "\0"
+            VALUE "FileDescription", "lelang_app" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "progmob_magical_destroyers" "\0"
+            VALUE "InternalName", "lelang_app" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "progmob_magical_destroyers.exe" "\0"
-            VALUE "ProductName", "progmob_magical_destroyers" "\0"
+            VALUE "OriginalFilename", "lelang_app.exe" "\0"
+            VALUE "ProductName", "lelang_app" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

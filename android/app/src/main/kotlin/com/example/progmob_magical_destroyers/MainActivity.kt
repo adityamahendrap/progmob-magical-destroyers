@@ -1,4 +1,4 @@
-package com.example.progmob_magical_destroyers
+package com.example.lelang_app
 
 import io.flutter.embedding.android.FlutterActivity
 

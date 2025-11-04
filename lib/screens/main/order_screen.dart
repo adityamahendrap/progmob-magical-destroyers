@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_connect/http/src/utils/utils.dart';
-import 'package:progmob_magical_destroyers/configs/colors/colors_planet.dart';
-import 'package:progmob_magical_destroyers/widgets/text_label.dart';
-
+import 'package:lelang_app/configs/colors/colors_planet.dart';
+import 'package:lelang_app/widgets/text_label.dart';
 
 final bgColor = Color(0xFDFDFD);
 

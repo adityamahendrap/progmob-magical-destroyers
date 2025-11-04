@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:progmob_magical_destroyers/screens/sign_in_screen.dart';
-import 'package:progmob_magical_destroyers/screens/sign_up_screen.dart';
-import 'package:progmob_magical_destroyers/widgets/full_width_button.dart';
-import 'package:progmob_magical_destroyers/widgets/oauth_button.dart';
-import 'package:progmob_magical_destroyers/widgets/text_title.dart';
-import 'package:progmob_magical_destroyers/widgets/wrapper/bottom_sheet_fit_content_wrapper.dart';
+import 'package:lelang_app/screens/sign_in_screen.dart';
+import 'package:lelang_app/screens/sign_up_screen.dart';
+import 'package:lelang_app/widgets/full_width_button.dart';
+import 'package:lelang_app/widgets/oauth_button.dart';
+import 'package:lelang_app/widgets/text_title.dart';
+import 'package:lelang_app/widgets/wrapper/bottom_sheet_fit_content_wrapper.dart';
 
 class GetStarted extends StatelessWidget {
   GetStarted({Key? key}) : super(key: key);

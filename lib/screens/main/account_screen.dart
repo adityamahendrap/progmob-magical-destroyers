@@ -1,16 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:progmob_magical_destroyers/configs/colors/colors_planet.dart';
-import 'package:progmob_magical_destroyers/screens/account/address/address_screen.dart';
-import 'package:progmob_magical_destroyers/screens/account/edit_profile.dart';
-import 'package:progmob_magical_destroyers/screens/account/language_screen.dart';
-import 'package:progmob_magical_destroyers/screens/account/notification_screen.dart';
-import 'package:progmob_magical_destroyers/screens/account/security_screen.dart';
-import 'package:progmob_magical_destroyers/widgets/app_bar_with_back_button.dart';
-import 'package:progmob_magical_destroyers/widgets/app_bar_with_logo.dart';
-import 'package:progmob_magical_destroyers/widgets/profile_picture.dart';
-import 'package:progmob_magical_destroyers/widgets/text_title.dart';
+import 'package:lelang_app/configs/colors/colors_planet.dart';
+import 'package:lelang_app/screens/account/address/address_screen.dart';
+import 'package:lelang_app/screens/account/edit_profile.dart';
+import 'package:lelang_app/screens/account/language_screen.dart';
+import 'package:lelang_app/screens/account/notification_screen.dart';
+import 'package:lelang_app/screens/account/security_screen.dart';
+import 'package:lelang_app/widgets/app_bar_with_back_button.dart';
+import 'package:lelang_app/widgets/app_bar_with_logo.dart';
+import 'package:lelang_app/widgets/profile_picture.dart';
+import 'package:lelang_app/widgets/text_title.dart';
 
 class AccountItem {
   final String text;
@@ -33,7 +33,7 @@ class _AccountState extends State<Account> {
   List<AccountItem> _accountItems = [
     AccountItem(
       text: 'Edit Profile',
-    icon: Icons.person_outline,
+      icon: Icons.person_outline,
       screen: EditProfile(),
     ),
     AccountItem(
@@ -93,7 +93,7 @@ class _AccountState extends State<Account> {
         item.text == 'Logout' ? null : CupertinoIcons.chevron_right;
     final color = item.text == 'Logout' ? Colors.red : Colors.black;
 
-  return ListTile(
+    return ListTile(
       leading: Icon(item.icon, color: color),
       title: Text(
         item.text,

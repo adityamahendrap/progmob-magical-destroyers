@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:progmob_magical_destroyers/widgets/app_bar_with_back_button.dart';
-import 'package:progmob_magical_destroyers/widgets/app_snack_bar.dart';
-import 'package:progmob_magical_destroyers/widgets/full_width_button_bottom_bar.dart';
-import 'package:progmob_magical_destroyers/widgets/input/text_input.dart';
-import 'package:progmob_magical_destroyers/widgets/text_title.dart';
+import 'package:lelang_app/widgets/app_bar_with_back_button.dart';
+import 'package:lelang_app/widgets/app_snack_bar.dart';
+import 'package:lelang_app/widgets/full_width_button_bottom_bar.dart';
+import 'package:lelang_app/widgets/input/text_input.dart';
+import 'package:lelang_app/widgets/text_title.dart';
 
 class SendForgotPasswordEmail extends StatelessWidget {
   SendForgotPasswordEmail({Key? key}) : super(key: key);

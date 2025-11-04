@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:progmob_magical_destroyers/configs/colors/colors_planet.dart';
-import 'package:progmob_magical_destroyers/screens/main/home_screen.dart';
-import 'package:progmob_magical_destroyers/screens/main/main_screen.dart';
-import 'package:progmob_magical_destroyers/screens/sign_in_screen.dart';
-import 'package:progmob_magical_destroyers/widgets/app_bar_with_back_button.dart';
-import 'package:progmob_magical_destroyers/widgets/app_snack_bar.dart';
-import 'package:progmob_magical_destroyers/widgets/full_width_button_bottom_bar.dart';
-import 'package:progmob_magical_destroyers/widgets/horizontal_divider.dart';
-import 'package:progmob_magical_destroyers/widgets/icon_button_circ;e.dart';
-import 'package:progmob_magical_destroyers/widgets/input/password_input.dart';
-import 'package:progmob_magical_destroyers/widgets/input/text_input.dart';
-import 'package:progmob_magical_destroyers/widgets/oauth_button.dart';
-import 'package:progmob_magical_destroyers/widgets/text_title.dart';
-import 'package:progmob_magical_destroyers/widgets/wrapper/bottom_sheet_fit_content_wrapper.dart';
+import 'package:lelang_app/configs/colors/colors_planet.dart';
+import 'package:lelang_app/screens/main/home_screen.dart';
+import 'package:lelang_app/screens/main/main_screen.dart';
+import 'package:lelang_app/screens/sign_in_screen.dart';
+import 'package:lelang_app/widgets/app_bar_with_back_button.dart';
+import 'package:lelang_app/widgets/app_snack_bar.dart';
+import 'package:lelang_app/widgets/full_width_button_bottom_bar.dart';
+import 'package:lelang_app/widgets/horizontal_divider.dart';
+import 'package:lelang_app/widgets/icon_button_circ;e.dart';
+import 'package:lelang_app/widgets/input/password_input.dart';
+import 'package:lelang_app/widgets/input/text_input.dart';
+import 'package:lelang_app/widgets/oauth_button.dart';
+import 'package:lelang_app/widgets/text_title.dart';
+import 'package:lelang_app/widgets/wrapper/bottom_sheet_fit_content_wrapper.dart';
 
 class SignUp extends StatefulWidget {
   SignUp({Key? key}) : super(key: key);
@@ -192,59 +192,59 @@ class _SignUpState extends State<SignUp> {
 
   Row _oauthButtons() {
     return Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  IconButtonCircle(
-                    icon: Image.asset('assets/google_icon.png'),
-                  ),
-                  SizedBox(width: 20),
-                  IconButtonCircle(
-                    icon: Image.asset('assets/facebook_icon.png'),
-                  ),
-                  SizedBox(width: 20),
-                  IconButtonCircle(
-                    icon: Image.asset('assets/github_icon.png'),
-                  ),
-                ],
-              );
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        IconButtonCircle(
+          icon: Image.asset('assets/google_icon.png'),
+        ),
+        SizedBox(width: 20),
+        IconButtonCircle(
+          icon: Image.asset('assets/facebook_icon.png'),
+        ),
+        SizedBox(width: 20),
+        IconButtonCircle(
+          icon: Image.asset('assets/github_icon.png'),
+        ),
+      ],
+    );
   }
 
   Row _agreement(BuildContext context) {
     return Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  SizedBox(
-                    height: 24,
-                    width: 24,
-                    child: Checkbox(
-                      value: _isAgree,
-                      onChanged: (value) => _toggleAgree(),
-                      activeColor: ColorPlanet.primary,
-                    ),
-                  ),
-                  SizedBox(width: 10),
-                  GestureDetector(
-                    onTap: () => _toggleAgree(),
-                    child: Text("I agree to APP_NAME "),
-                  ),
-                  TextButton(
-                    onPressed: () => bottomSheetFitContentWrapper(
-                      context: context,
-                      content: _termsAndConditionsContent(),
-                    ),
-                    style: ButtonStyle(
-                      padding: MaterialStateProperty.all(EdgeInsets.zero),
-                    ),
-                    child: Text(
-                      "Terms & Conditions.",
-                      style: TextStyle(
-                        color: ColorPlanet.primary,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  )
-                ],
-              );
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        SizedBox(
+          height: 24,
+          width: 24,
+          child: Checkbox(
+            value: _isAgree,
+            onChanged: (value) => _toggleAgree(),
+            activeColor: ColorPlanet.primary,
+          ),
+        ),
+        SizedBox(width: 10),
+        GestureDetector(
+          onTap: () => _toggleAgree(),
+          child: Text("I agree to APP_NAME "),
+        ),
+        TextButton(
+          onPressed: () => bottomSheetFitContentWrapper(
+            context: context,
+            content: _termsAndConditionsContent(),
+          ),
+          style: ButtonStyle(
+            padding: MaterialStateProperty.all(EdgeInsets.zero),
+          ),
+          child: Text(
+            "Terms & Conditions.",
+            style: TextStyle(
+              color: ColorPlanet.primary,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        )
+      ],
+    );
   }
 
   TextFormField _confirmPasswordInput() {

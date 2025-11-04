@@ -7,15 +7,15 @@ import 'package:flutter_carousel_widget/flutter_carousel_widget.dart';
 import 'package:flutter_layout_grid/flutter_layout_grid.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:get/get.dart';
-import 'package:progmob_magical_destroyers/configs/colors/colors_planet.dart';
+import 'package:lelang_app/configs/colors/colors_planet.dart';
 import 'package:flutter_carousel_widget/flutter_carousel_widget.dart';
-import 'package:progmob_magical_destroyers/controller/profile_controller.dart';
-import 'package:progmob_magical_destroyers/screens/main/detail_product_screen.dart';
-import 'package:progmob_magical_destroyers/screens/main/main_screen.dart';
-import 'package:progmob_magical_destroyers/screens/main/search_screen.dart';
-import 'package:progmob_magical_destroyers/widgets/product_card.dart';
-import 'package:progmob_magical_destroyers/widgets/carousel_slider_hero.dart';
-import 'package:progmob_magical_destroyers/widgets/profile_picture.dart';
+import 'package:lelang_app/controller/profile_controller.dart';
+import 'package:lelang_app/screens/main/detail_product_screen.dart';
+import 'package:lelang_app/screens/main/main_screen.dart';
+import 'package:lelang_app/screens/main/search_screen.dart';
+import 'package:lelang_app/widgets/product_card.dart';
+import 'package:lelang_app/widgets/carousel_slider_hero.dart';
+import 'package:lelang_app/widgets/profile_picture.dart';
 
 class CategoryItem {
   final String name;

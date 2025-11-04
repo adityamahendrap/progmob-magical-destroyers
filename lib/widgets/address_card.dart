@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:progmob_magical_destroyers/configs/colors/colors_planet.dart';
-import 'package:progmob_magical_destroyers/widgets/text_label.dart';
+import 'package:lelang_app/configs/colors/colors_planet.dart';
+import 'package:lelang_app/widgets/text_label.dart';
 
 class AddressCard extends StatelessWidget {
   final index;

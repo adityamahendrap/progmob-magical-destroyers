@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:progmob_magical_destroyers/configs/colors/colors_planet.dart';
-import 'package:progmob_magical_destroyers/widgets/app_bar_with_back_button.dart';
-import 'package:progmob_magical_destroyers/widgets/full_width_button.dart';
+import 'package:lelang_app/configs/colors/colors_planet.dart';
+import 'package:lelang_app/widgets/app_bar_with_back_button.dart';
+import 'package:lelang_app/widgets/full_width_button.dart';
 
 class Security extends StatefulWidget {
   const Security({super.key});

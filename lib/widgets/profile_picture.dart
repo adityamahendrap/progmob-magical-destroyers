@@ -4,9 +4,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:progmob_magical_destroyers/configs/colors/colors_planet.dart';
+import 'package:lelang_app/configs/colors/colors_planet.dart';
 import 'package:color_log/color_log.dart';
-import 'package:progmob_magical_destroyers/controller/profile_controller.dart';
+import 'package:lelang_app/controller/profile_controller.dart';
 
 class ProfilePicture extends StatefulWidget {
   const ProfilePicture({super.key});

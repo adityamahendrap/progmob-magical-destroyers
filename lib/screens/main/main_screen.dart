@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-import 'package:progmob_magical_destroyers/configs/colors/colors_planet.dart';
-import 'package:progmob_magical_destroyers/screens/main/account_screen.dart';
-import 'package:progmob_magical_destroyers/screens/main/cart_screen.dart';
-import 'package:progmob_magical_destroyers/screens/main/home_screen.dart';
-import 'package:progmob_magical_destroyers/screens/main/order_screen.dart';
+import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:lelang_app/configs/colors/colors_planet.dart';
+import 'package:lelang_app/screens/main/account_screen.dart';
+import 'package:lelang_app/screens/main/cart_screen.dart';
+import 'package:lelang_app/screens/main/home_screen.dart';
+import 'package:lelang_app/screens/main/order_screen.dart';
 
 class Main extends StatefulWidget {
   const Main({Key? key}) : super(key: key);
@@ -21,39 +21,38 @@ class _MainState extends State<Main> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: PersistentTabView(
-        context,
-        controller: _controller,
-        screens: [
-          Home(),
-          Cart(),
-          Order(),
-          Account(),
-        ],
-        items: _navBarsItems(),
-        navBarStyle: NavBarStyle.style6,
-        confineInSafeArea: true,
-        // margin: EdgeInsets.only(bottom: 10.0),
-        backgroundColor: Colors.white, // Default is Colors.white.
-        handleAndroidBackButtonPress: true, // Default is true.
-        resizeToAvoidBottomInset:
-            true, // This needs to be true if you want to move up the screen when keyboard appears. Default is true.
-        stateManagement: true, // Default is true.
-        hideNavigationBarWhenKeyboardShows:
-            true, // Recommended to set 'resizeToAvoidBottomInset' as true while using this argument. Default is true.
-        decoration: NavBarDecoration(
-          borderRadius: BorderRadius.circular(10.0),
-          colorBehindNavBar: Colors.white,
-        ),
-        popAllScreensOnTapOfSelectedTab: true,
-        popActionScreens: PopActionScreensType.all,
-        itemAnimationProperties: ItemAnimationProperties(
-          // Navigation Bar's items animation properties.
+    return PersistentTabView(
+      context,
+      controller: _controller,
+      screens: [
+        Home(),
+        Cart(),
+        Order(),
+        Account(),
+      ],
+      items: _navBarsItems(),
+      handleAndroidBackButtonPress: true,
+      resizeToAvoidBottomInset: true,
+      stateManagement: true,
+      hideNavigationBarWhenKeyboardAppears: true,
+      popBehaviorOnSelectedNavBarItemPress: PopBehavior.all,
+      padding: EdgeInsets.only(top: 8),
+      backgroundColor: Colors.white,
+      isVisible: true,
+      animationSettings: NavBarAnimationSettings(
+        navBarItemAnimation: ItemAnimationSettings(
           duration: Duration(milliseconds: 200),
           curve: Curves.ease,
         ),
+        screenTransitionAnimation: ScreenTransitionAnimationSettings(
+          animateTabTransition: false,
+          duration: Duration(milliseconds: 200),
+          screenTransitionAnimationType: ScreenTransitionAnimationType.fadeIn,
+        ),
       ),
+      confineToSafeArea: true,
+      navBarHeight: kBottomNavigationBarHeight,
+      navBarStyle: NavBarStyle.style6,
     );
   }
 
@@ -62,28 +61,28 @@ class _MainState extends State<Main> {
       PersistentBottomNavBarItem(
         icon: Icon(Icons.home),
         inactiveIcon: Icon(Icons.home_outlined),
-        title: ("Home"),
+        title: "Home",
         activeColorPrimary: mainColor,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
       PersistentBottomNavBarItem(
         icon: Icon(Icons.shopping_cart),
         inactiveIcon: Icon(Icons.shopping_cart_outlined),
-        title: ("Cart"),
+        title: "Cart",
         activeColorPrimary: mainColor,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
       PersistentBottomNavBarItem(
         icon: Icon(Icons.receipt),
         inactiveIcon: Icon(Icons.receipt_long_outlined),
-        title: ("Orders"),
+        title: "Orders",
         activeColorPrimary: mainColor,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
       PersistentBottomNavBarItem(
         icon: Icon(Icons.person),
         inactiveIcon: Icon(Icons.person_outline),
-        title: ("Account"),
+        title: "Account",
         activeColorPrimary: mainColor,
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),

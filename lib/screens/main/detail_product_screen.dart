@@ -4,12 +4,12 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_carousel_widget/flutter_carousel_widget.dart';
 import 'package:get/get.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-import 'package:progmob_magical_destroyers/configs/colors/colors_planet.dart';
-import 'package:progmob_magical_destroyers/widgets/carousel_slider_product.dart';
-import 'package:progmob_magical_destroyers/widgets/product_card.dart';
-import 'package:progmob_magical_destroyers/widgets/product_sold_text.dart';
-import 'package:progmob_magical_destroyers/widgets/quantity_counter.dart';
-import 'package:progmob_magical_destroyers/widgets/text_title.dart';
+import 'package:lelang_app/configs/colors/colors_planet.dart';
+import 'package:lelang_app/widgets/carousel_slider_product.dart';
+import 'package:lelang_app/widgets/product_card.dart';
+import 'package:lelang_app/widgets/product_sold_text.dart';
+import 'package:lelang_app/widgets/quantity_counter.dart';
+import 'package:lelang_app/widgets/text_title.dart';
 import 'package:readmore/readmore.dart';
 
 class DetailProduct extends StatelessWidget {

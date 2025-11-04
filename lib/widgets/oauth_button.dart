@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:progmob_magical_destroyers/configs/colors/colors_planet.dart';
+import 'package:lelang_app/configs/colors/colors_planet.dart';
 
 class OauthButton extends StatelessWidget {
   final String iconPath;

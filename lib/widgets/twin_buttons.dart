@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:progmob_magical_destroyers/widgets/full_width_button.dart';
+import 'package:lelang_app/widgets/full_width_button.dart';
 
 class TwinButtons extends StatelessWidget {
   final Function onPressedOkButton;

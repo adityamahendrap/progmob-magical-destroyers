@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:progmob_magical_destroyers/configs/colors/colors_planet.dart';
-import 'package:progmob_magical_destroyers/screens/main/main_screen.dart';
-import 'package:progmob_magical_destroyers/screens/send_forgot_password_email_screen.dart';
-import 'package:progmob_magical_destroyers/screens/sign_up_screen.dart';
-import 'package:progmob_magical_destroyers/widgets/app_bar_with_back_button.dart';
-import 'package:progmob_magical_destroyers/widgets/app_snack_bar.dart';
-import 'package:progmob_magical_destroyers/widgets/full_width_button_bottom_bar.dart';
-import 'package:progmob_magical_destroyers/widgets/horizontal_divider.dart';
-import 'package:progmob_magical_destroyers/widgets/icon_button_circ;e.dart';
-import 'package:progmob_magical_destroyers/widgets/input/password_input.dart';
-import 'package:progmob_magical_destroyers/widgets/input/text_input.dart';
-import 'package:progmob_magical_destroyers/widgets/text_title.dart';
+import 'package:lelang_app/configs/colors/colors_planet.dart';
+import 'package:lelang_app/screens/main/main_screen.dart';
+import 'package:lelang_app/screens/send_forgot_password_email_screen.dart';
+import 'package:lelang_app/screens/sign_up_screen.dart';
+import 'package:lelang_app/widgets/app_bar_with_back_button.dart';
+import 'package:lelang_app/widgets/app_snack_bar.dart';
+import 'package:lelang_app/widgets/full_width_button_bottom_bar.dart';
+import 'package:lelang_app/widgets/horizontal_divider.dart';
+import 'package:lelang_app/widgets/icon_button_circ;e.dart';
+import 'package:lelang_app/widgets/input/password_input.dart';
+import 'package:lelang_app/widgets/input/text_input.dart';
+import 'package:lelang_app/widgets/text_title.dart';
 
 class SignIn extends StatefulWidget {
   SignIn({Key? key}) : super(key: key);
